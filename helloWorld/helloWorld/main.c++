@@ -5,11 +5,25 @@
 //  Created by Shahidur Rahman Shoruv on 8/12/24.
 //
 
-#include <stdio.h>
+#include <iostream>
+using namespace std;
 
 int main(void)
 {
-    printf("Hello World!\n");
+    int step, house;
     
-    return 0;
+    cin >> house;
+    
+    for (int i=5; i>0; i--)
+    {
+        int rem = house % i;
+        step = house / i;
+        
+        if (rem == 0)
+        {
+            cout << step;
+            return 0;
+        }
+    }
+    
 }
